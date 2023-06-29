@@ -1,0 +1,89 @@
+.title{
+    text-shadow: 10px 5px 5px hsla(0,0%,7%,0.79);
+margin-top: 5rem;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: black;
+
+}
+
+body{
+text-align: center;
+display: flex;
+justify-content: center;
+}
+
+.papel{
+background: url(/public/img/fondotitulo.png) no-repeat;
+height: 300px;
+width: 450px;
+display: flex;
+align-items: center;
+justify-content: center;
+    
+}
+
+.data{
+    width: 300px;
+
+        
+}
+
+button{
+    background-color: black;
+    text-align: center;
+    height: 50px;
+    width: 140px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    position: relative;
+    border-radius: 12px;
+    margin-top: 20PX;
+
+}
+
+button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,red,blue,deeppink,blue,red,blue,deeppink,blue) ;
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0%{
+        background-position: 0 0;
+   }
+   50%{
+    background-position: 400% 0;
+   }
+   100%{
+    background-position: 0 0;
+   }
+}
+
+@media screen and (max-width:700px ) {
+    .papel{
+        width: 350px;
+        background-size: 350px;
+    }
+    .data{
+        width: 200px;
+        position: relative;
+        bottom: 30px;
+    }    
+}
+
+.conteiner-contact{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
