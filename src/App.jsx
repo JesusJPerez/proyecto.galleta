@@ -1,8 +1,8 @@
 import './App.css'
-import Phrase from './components/phrase'
 import phrases from './data/phrases.json'
 import { useState } from 'react'
-import Contact from './components/contact'
+import Phrase from './components/Phrase'
+import Contact from './components/Contact'
 
 function App() {
 
