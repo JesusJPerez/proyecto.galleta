@@ -10,7 +10,7 @@ function App() {
 
   const[fondorandon, setFondorandon] = useState(0)
 
-  const fondos=["/public/fondos/fondo1.jpg","/public/fondos/fondo1.png", "/public/fondos/fondo2.jpg", "/public/fondos/fondo2.png", "/public/fondos/fondo3.jpg", "/public/fondos/fondo3.png", "/public/fondos/fondo4.jpg", "/public/fondos/fondo4.png"]
+  const fondos=["/fondos/fondo1.jpg","/fondos/fondo1.png", "/fondos/fondo2.jpg", "/fondos/fondo2.png", "/fondos/fondo3.jpg", "/fondos/fondo3.png", "/fondos/fondo4.jpg", "/fondos/fondo4.png"]
 
   
   document.body.style = `background-image: url(${fondos[fondorandon]})`
